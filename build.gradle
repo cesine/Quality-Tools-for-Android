@@ -60,15 +60,15 @@ project('android-sample') {
         compile "joda-time:joda-time:$jodaLibraryVersion"
         compile "com.android.support:support-v4:$androidSupportVersion"
 
-        instrumentTestCompile "com.jayway.android.robotium:robotium-solo:$robotiumVersion"
-        instrumentTestCompile "org.hamcrest:hamcrest-core:$hamcrestVersion"
-        instrumentTestCompile "com.squareup.spoon:spoon-client:$spoonVersion"
-        instrumentTestCompile "com.squareup:fest-android:$festVersion"
-        instrumentTestCompile "com.google.dexmaker:dexmaker:$dexmakerVersion"
-        instrumentTestCompile "com.google.dexmaker:dexmaker-mockito:$dexmakerMockitoVersion"
-        instrumentTestCompile "org.easymock:easymock:$easyMockVersion" exclude group: "cglib"
-        instrumentTestCompile "org.mockito:mockito-core:$mockitoVersion"
-        instrumentTestCompile "org.boundbox:boundbox-library:$boundBoxVersion"
+        androidTestCompile "com.jayway.android.robotium:robotium-solo:$robotiumVersion"
+        androidTestCompile "org.hamcrest:hamcrest-core:$hamcrestVersion"
+        androidTestCompile "com.squareup.spoon:spoon-client:$spoonVersion"
+        androidTestCompile "com.squareup:fest-android:$festVersion"
+        androidTestCompile "com.google.dexmaker:dexmaker:$dexmakerVersion"
+        androidTestCompile "com.google.dexmaker:dexmaker-mockito:$dexmakerMockitoVersion"
+        androidTestCompile "org.easymock:easymock:$easyMockVersion" exclude group: "cglib"
+        androidTestCompile "org.mockito:mockito-core:$mockitoVersion"
+        androidTestCompile "org.boundbox:boundbox-library:$boundBoxVersion"
     }
 
 
@@ -300,7 +300,7 @@ project('android-sample-espresso-tests') {
         compile "joda-time:joda-time:$jodaLibraryVersion"
         compile "com.android.support:support-v4:$androidSupportVersion"
         
-        instrumentTestCompile "com.google.android:android-espresso:1.0-SNAPSHOT"
+        androidTestCompile "com.google.android:android-espresso:1.0-SNAPSHOT"
     }
 
 
